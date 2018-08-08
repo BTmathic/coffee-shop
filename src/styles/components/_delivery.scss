@@ -1,0 +1,16 @@
+#delivery {
+  background: lighten(grey, 10%);
+  color: white;
+  text-align: center;
+  .delivery__text {
+    font-weight: bold;
+  }
+  .delivery-signup {
+    background: black;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    margin: 1rem auto;
+    padding: 1rem 2rem;
+  }
+}

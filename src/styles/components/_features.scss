@@ -1,0 +1,46 @@
+#features {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  .feature {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    font-size: 125%;
+    height: 182px;
+    margin: 2rem auto;
+    width: 273px;
+    .feature__text {
+      text-align: center;
+      width: 273px;
+    }
+  }
+  .feature--overlay {
+    height: 182px;
+    position: absolute;
+    width: 273px;
+  }
+  .feature--overlay:hover {
+    background: rgba(200, 200, 200, 0.7);
+  }
+  .feature--coffee {
+    background: url('/Images/coffee-beans.jpg'); 
+    background-size: cover;
+    color: white;
+  }
+  .feature--drink {
+    background: url('/Images/drink-of-the-week.jpg'); 
+    background-size: cover;
+    color: white;
+  }
+  .feature--bakery {
+    background: url('/Images/baked-goods.jpg'); 
+    background-size: cover;
+    color: white;
+  }
+  .feature--shirt {
+    background: url('/Images/shirt.png'); 
+    background-size: cover;
+    color: white;
+  }
+}

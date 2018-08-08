@@ -1,0 +1,18 @@
+#contact {
+  background: lighten(black, 5%);
+  color: white;
+  position: relative;
+  .contact__contents {
+    display: flex;
+    justify-content: space-evenly;
+    .contact__menu {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  footer {
+    bottom: 0;
+    position: absolute;
+    
+  }
+}

@@ -1,0 +1,22 @@
+#stats {
+  background: grey;
+  .stats__content {
+    display: flex;
+    flex-direction: column;
+    .stat {
+      background: white;
+      margin: 1rem auto;
+      max-width: 30rem;
+      padding: 2rem 0;
+      text-align: center;
+      width: 80%;
+      .stat__title {
+        font-size: 125%;
+        font-weight: bold;
+      }
+      .stat__number {
+        font-size: 150%;
+      }
+    }
+  }
+}
