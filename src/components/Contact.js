@@ -4,35 +4,37 @@ const Contact = () => (
   <div id='contact' className='page-section'>
     <div className='content-container'>
       <div className='contact__contents'>
-        <div className='contact__menu'>
-          <div className='contact__menu-option'>
-            Café
+        <div className='contact__menus'>
+          <div className='contact__menu'>
+            <div className='contact__menu-option'>
+              Café
+            </div>
+            <div className='contact__menu-option'>
+              Our Story
+            </div>
+            <div className='contact__menu-option'>
+              Brewing
+            </div>
+            <div className='contact__menu-option'>
+              Locations
+            </div>
           </div>
-          <div className='contact__menu-option'>
-            Our Story
-          </div>
-          <div className='contact__menu-option'>
-            Brewing
-          </div>
-          <div className='contact__menu-option'>
-            Locations
-          </div>
-        </div>
-        <div className='contact__menu'>
-          <div className='contact__menu-option'>
-            Delivery
-          </div>
-          <div className='contact__menu-option'>
-            My Account
-          </div>
-          <div className='contact__menu-option'>
-            Terms &amp; Conditions
-          </div>
-          <div className='contact__menu-option'>
-            Jobs
-          </div>
-          <div className='contact__menu-option'>
-            FAQ
+          <div className='contact__menu'>
+            <div className='contact__menu-option'>
+              Delivery
+            </div>
+            <div className='contact__menu-option'>
+              My Account
+            </div>
+            <div className='contact__menu-option'>
+              Terms &amp; Conditions
+            </div>
+            <div className='contact__menu-option'>
+              Jobs
+            </div>
+            <div className='contact__menu-option'>
+              FAQ
+            </div>
           </div>
         </div>
         <div className='contact__info'>

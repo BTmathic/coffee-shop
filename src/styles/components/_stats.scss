@@ -1,10 +1,11 @@
 #stats {
-  background: grey;
+  color: white;
   .stats__content {
     display: flex;
     flex-direction: column;
     .stat {
-      background: white;
+      background: #4F3627;
+      border-radius: 5px;
       margin: 1rem auto;
       max-width: 30rem;
       padding: 2rem 0;
@@ -16,6 +17,11 @@
       }
       .stat__number {
         font-size: 150%;
+      }
+      .stat__footer {
+        font-size: 75%;
+        padding-right: 1rem;
+        text-align: right;
       }
     }
   }

@@ -4,7 +4,8 @@ export default class Stats extends React.Component {
   state = {
     daysOpen: 0,
     meetups: 53,
-    workshops: 37
+    workshops: 37,
+    assignments: 529
   }
 
   componentDidMount() {
@@ -28,6 +29,14 @@ export default class Stats extends React.Component {
             <div className='stat'>
               <div className='stat__title'>Meetups hosted</div>
               <div className='stat__number'>{this.state.meetups}</div>
+            </div>
+            <div className='stat'>
+              <div className='stat__title'>Assignments completed</div>
+              <div className='stat__number'>{this.state.assignments}*</div>
+              <div className='stat__footer'>*Approximate</div>
+              <div className='stat__footer'>(Margin of error {
+                Math.floor(this.state.assignments/100)*100
+              })</div>
             </div>
           </div>
         </div>

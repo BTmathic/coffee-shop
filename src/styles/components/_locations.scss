@@ -1,4 +1,6 @@
 #locations {
+  background: linear-gradient($dark-brown3, $dark-brown4);
+  color: white;
   text-align: center;
   .locations__image {
     background: url('/Images/locations.jpg');
@@ -8,5 +10,20 @@
     margin: 0 auto;
     padding-top: 66.7%; //
     width: 90%;
+  }
+  .locations__text {
+    .locations__text-contents {
+      display: flex;
+      flex-direction: column;
+      .locations__shop {
+        background: white;
+        border-radius: 5px;
+        color: $dark-brown4;
+        cursor: pointer;
+        margin: 1rem auto;
+        padding: 1rem 2rem;
+        width: 50%;
+      }
+    }
   }
 }
