@@ -49,13 +49,13 @@ const Contact = () => (
               Villy Township, Canada
             </div>
             <div className='contact__address-line'>
-              987.456.3210
+              (987) 456 - 3210
             </div>
           </div>
           <div className='contact__socials'>
-            Facebook
-            Twitter
-            Instagram
+            <img src='/Images/facebook-logo.png' alt='Facebook' />
+            <img src='/Images/twitter-logo.png' alt='Twitter' />
+            <img src='/Images/instagram-logo.png' alt='Instagram' />
           </div>
         </div>
       </div>

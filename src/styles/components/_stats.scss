@@ -1,15 +1,16 @@
 #stats {
   color: white;
+  background: #CF9F4F;
   .stats__content {
     display: flex;
     flex-direction: column;
+    padding: 2rem 0;
     .stat {
       background: #4F3627;
       border-radius: 5px;
       margin: 1rem auto;
       max-width: 30rem;
       padding: 2rem 0;
-      text-align: center;
       width: 80%;
       .stat__title {
         font-size: 125%;
@@ -23,6 +24,15 @@
         padding-right: 1rem;
         text-align: right;
       }
+    }
+  }
+}
+
+@media (min-width: $desktop-breakpoint) {
+  #stats {
+    .stats__content {
+      flex-direction: row;
+      flex-wrap: wrap;
     }
   }
 }

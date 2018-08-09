@@ -4,7 +4,7 @@ export default class Stats extends React.Component {
   state = {
     daysOpen: 0,
     meetups: 53,
-    workshops: 37,
+    workshops: 79,
     assignments: 529
   }
 
@@ -33,10 +33,7 @@ export default class Stats extends React.Component {
             <div className='stat'>
               <div className='stat__title'>Assignments completed</div>
               <div className='stat__number'>{this.state.assignments}*</div>
-              <div className='stat__footer'>*Approximate</div>
-              <div className='stat__footer'>(Margin of error {
-                Math.floor(this.state.assignments/100)*100
-              })</div>
+              <div className='stat__footer'>*Rough guess...</div>
             </div>
           </div>
         </div>

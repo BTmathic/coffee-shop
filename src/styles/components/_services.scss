@@ -3,42 +3,67 @@
   color: white;
   display: flex;
   flex-direction: column;
-  text-align: center;
-  .service {
-    align-items: center;
-    cursor: pointer;
+  padding-bottom: 2rem;
+  .services__contents {
     display: flex;
-    font-size: 125%;
-    height: 182px;
-    margin: 2rem auto;
-    width: 273px;
-    .service__text {
-      text-align: center;
-      width: 100%;
+    flex-direction: column;
+    .service {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      width: 90%;
+      cursor: pointer;
+      display: flex;
+      margin: 2rem auto;
+      .service__text {
+        display: none;
+      }
+    }
+    .service--basics {
+      background: url('/Images/basics.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 182px;
+      width: 273px;
+    }
+    .service--art {
+      background: url('/Images/latte-art.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 182px;
+      width: 273px;
+    }
+    .service--equipment {
+      background: url('/Images/equipment.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 182px;
+      width: 273px;
+    }
+    .service--different {
+      background: url('/Images/different.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 182px;
+      width: 273px;
     }
   }
-  .service--basics {
-    background: url('/Images/basics.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: white;
-  }
-  .service--art {
-    background: url('/Images/latte-art.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: white;
-  }
-  .service--equipment {
-    background: url('/Images/equipment.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: white;
-  }
-  .service--different {
-    background: url('/Images/different.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: white;
+}
+
+@media (min-width: $desktop-breakpoint) {
+  #services {
+    .services__contents {
+      flex-direction: row;
+      flex-wrap: wrap;
+      max-width: 800px;
+      .service {
+        .service__text {
+          display: block;
+          text-align: left;
+          width: 400px;
+          h2 { text-align: center; }
+        }
+      }
+    }
   }
 }

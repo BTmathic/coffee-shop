@@ -1,28 +1,54 @@
 #locations {
   background: linear-gradient($dark-brown3, $dark-brown4);
   color: white;
-  text-align: center;
-  .locations__image {
-    background: url('/Images/locations.jpg');
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 0;
-    margin: 0 auto;
-    padding-top: 66.7%; //
-    width: 90%;
+  .locations__contents {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0;
+    .locations__image {
+      background: url('/Images/locations.jpg');
+      background-repeat: no-repeat;
+      background-size: contain;
+      height: 0;
+      margin: 0 auto;
+      padding-top: 66.7%; //
+      width: 90%;
+    }
+    .locations__text {
+      .locations__text-contents {
+        display: flex;
+        flex-direction: column;
+        .locations__shop {
+          background: white;
+          border-radius: 5px;
+          color: $dark-brown4;
+          cursor: pointer;
+          margin: 1rem auto;
+          max-width: 15rem;
+          padding: 1rem 2rem;
+          width: 50%;
+        }
+      }
+    }
   }
-  .locations__text {
-    .locations__text-contents {
-      display: flex;
-      flex-direction: column;
-      .locations__shop {
-        background: white;
-        border-radius: 5px;
-        color: $dark-brown4;
-        cursor: pointer;
-        margin: 1rem auto;
-        padding: 1rem 2rem;
-        width: 50%;
+}
+
+@media (min-width: $desktop-breakpoint) {
+  #locations {
+    .locations__contents {
+      align-items: center;
+      flex-direction: row;
+      .locations__image {
+        height: 233px;
+        padding-top: 0;
+        width: 350px;
+      }
+      .locations__text {
+        max-width: 350px;
+        .locations__text-contents {
+          flex-direction: row;
+          flex-wrap: wrap;
+        }
       }
     }
   }
