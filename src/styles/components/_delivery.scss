@@ -5,12 +5,15 @@
     font-weight: bold;
   }
   .delivery-signup {
-    background: black;
+    background: $dark-brown4;
     border-radius: 5px;
     color: white;
     cursor: pointer;
     display: inline-block;
     margin: 1rem auto;
     padding: 1rem 2rem;
+  }
+  .delivery-signup:hover {
+    background: lighten($dark-brown4, 10%);
   }
 }

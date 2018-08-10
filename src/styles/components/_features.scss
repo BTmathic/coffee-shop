@@ -14,7 +14,11 @@
       margin: 2rem auto;
       width: 273px;
       .feature__text {
-        width: 273px;
+        background: rgba(255, 255, 255, 0.6);
+        color: $dark-brown1;
+        display: inline-block;
+        margin: 0 auto;
+        padding: 0 1rem;
       }
     }
     .feature--overlay {

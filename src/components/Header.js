@@ -2,17 +2,33 @@ import React from 'react';
 
 export default class Header extends React.Component {
   state = {
-    menuOpen: false
+    menuOpen: false,
+    menuVisible: true,
+    scrollY: 0
   }
 
   handleClick = () => {
-    //this.menu.classList.toggle('menu-open');
     this.setState((prevState) => ({ menuOpen: !prevState.menuOpen }));
+  }
+
+  handleScroll = () => {
+    this.setState((prevState) => ({
+      menuVisible: prevState.scrollY > window.scrollY ? true : false,
+      scrollY: window.scrollY
+    }));
+  }
+
+  componentDidMount() {
+    window.addEventListener('scroll', this.handleScroll);
+  }
+
+  componentWillMount() {
+    window.removeEventListener('scroll', this.handleScroll);
   }
 
   render() {
     return (
-      <header id='header'>
+      <header id={this.state.menuVisible ? 'header' : 'header-hidden'}>
         <div className='content-container'>
           <div className='header__content'>
             <div className='header__title'>

@@ -28,6 +28,9 @@
           padding: 1rem 2rem;
           width: 50%;
         }
+        .locations__shop:hover {
+          background: darken(white, 15%);
+        }
       }
     }
   }

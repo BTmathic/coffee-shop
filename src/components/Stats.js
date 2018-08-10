@@ -5,7 +5,7 @@ export default class Stats extends React.Component {
     daysOpen: 0,
     meetups: 53,
     workshops: 79,
-    assignments: 529
+    catering: 51
   }
 
   componentDidMount() {
@@ -31,9 +31,8 @@ export default class Stats extends React.Component {
               <div className='stat__number'>{this.state.meetups}</div>
             </div>
             <div className='stat'>
-              <div className='stat__title'>Assignments completed</div>
-              <div className='stat__number'>{this.state.assignments}*</div>
-              <div className='stat__footer'>*Rough guess...</div>
+              <div className='stat__title'>Events catered</div>
+              <div className='stat__number'>{this.state.catering}</div>
             </div>
           </div>
         </div>

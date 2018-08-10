@@ -8,12 +8,10 @@ import Delivery from './Delivery';
 import Locations from './Locations';
 import Contact from './Contact';
 
-// make dark sections gradient from top to bottom
-
 const DashboardPage = () => (
   <div>
     <Header />
-    <div className='landing-image' alt=''></div>
+    <div className='landing-image' alt='Coffee beans, espresso press, grinds and a latte'></div>
     <OurStory />
     <Features />
     <Stats />
