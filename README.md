@@ -1,12 +1,14 @@
 # Coffee Shop
 
+Simple one page site for a small coffee shop.
+
 ### Front End
 
 * React
 
 ### Build Tools
 
-* Webpack
+* Parcel
 * Yarn
 * Babel
 

@@ -1,5 +1,9 @@
 import React from 'react';
 
+const facebookLogo = require('../../public/Images/facebook-logo.png');
+const twitterLogo = require('../../public/Images/twitter-logo.png');
+const instagramLogo = require('../../public/Images/instagram-logo.png');
+
 const Contact = () => (
   <div id='contact' className='page-section'>
     <div className='content-container'>
@@ -43,7 +47,7 @@ const Contact = () => (
               Café Torréfaction
             </div>
             <div className='contact__address-line'>
-              321 Fake Road
+              321 Bean Road
             </div>
             <div className='contact__address-line'>
               Villy Township, Canada
@@ -53,9 +57,9 @@ const Contact = () => (
             </div>
           </div>
           <div className='contact__socials'>
-            <img src='/Images/facebook-logo.png' alt='Facebook' />
-            <img src='/Images/twitter-logo.png' alt='Twitter' />
-            <img src='/Images/instagram-logo.png' alt='Instagram' />
+            <img src={facebookLogo} alt='Facebook' />
+            <img src={twitterLogo} alt='Twitter' />
+            <img src={instagramLogo} alt='Instagram' />
           </div>
         </div>
       </div>
